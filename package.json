@@ -4,28 +4,29 @@
     "description": "",
     "main": "server/server.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "cd server && npm start",
-      "start:prod": "cd server && npm start",
-      "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-      "install": "cd server && npm i && cd ../client && npm i",
-      "seed": "cd server && npm run seed",
-      "heroku-postbuild": "cd client && npm run build"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "cd server && npm start",
+        "start:prod": "cd server && npm start",
+        "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+        "install": "cd server && npm i && cd ../client && npm i",
+        "seed": "cd server && npm run seed",
+        "heroku-postbuild": "cd client && npm run build"
     },
     "repository": {
-      "type": "git",
-      "url": "git@work.github.com:jlamond37/book-search-engine.git"
+        "type": "git",
+        "url": "git@work.github.com:jlamond37/book-search-engine.git"
     },
     "keywords": [],
     "author": "Juliet Lamond",
     "bugs": {
-      "url": "https://github.com/jlamond37/book-search-engine/issues"
+        "url": "https://github.com/jlamond37/book-search-engine/issues"
     },
     "homepage": "https://github.com/jlamond37/book-search-engine#readme",
     "dependencies": {
-      "if-env": "^1.0.4"
+        "apollo-server-express": "^2.15.0",
+        "if-env": "^1.0.4"
     },
     "devDependencies": {
-      "concurrently": "^5. 2.0"
+        "concurrently": "^5. 2.0"
     }
-  }
+}
